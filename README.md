@@ -1,0 +1,2 @@
+# phoenix-scouting-server
+Garbage
