@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+	<head>
+		<style>
+			html {
+				background-color: #242424;
+				color: #fafafa;
+			}
+			body {
+				font-family: Helvetica;
+				padding-left: 15%;
+				padding-right: 15%;
+			}
+			h3, p {
+				margin: 2pt 2pt 2pt 2pt;
+			}
+			a {
+				color: #dadada;
+			}
+			.bar {
+				text-align: center;
+			}
+			.bar > * {
+				padding-left: 6pt;
+				padding-right: 6pt;
+			}
+			.datatable {
+				font-size: 14pt;
+				border: solid 1pt lightgray;
+			}
+			.datafield-name {
+				font-weight: 600;
+			}
+			.foot {
+				font-size: 11pt;
+				text-align: center;
+				color: lightgray;
+				margin-top: 2rem;
+			}
+			.boxy-box {
+				padding-left: 2rem;
+				padding-right: 2rem;
+				padding-top: 1rem;
+				padding-bottom: 1rem;
+				background-color: #323232;
+			}
+			.boxy-box > * {
+				margin: 1pt 1pt 1pt 1pt;
+			}
+
+		</style>
+	</head>
+	<body>
+		<div class="bar">
+			<b>Phoenix Scouting Server</b>
+			<a href="">Search</a>
+		</div>
+
+		{% block content %}{% endblock content %}
+
+		<p class="foot">Phoenix Scouting Server v{{ version }}</p>
+	</body>
+</html>

@@ -1,0 +1,17 @@
+[package]
+name = "phoenix-scouting-server"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+axum = { version = "0.7.5", features = ["macros"] }
+log = "0.4.21"
+tera = "1.19.1"
+tokio = { version = "1.36.0", features = ["macros", "rt-multi-thread", "signal"] }
+env_logger = "0.11.3"
+reqwest = { version = "0.12.1", default-features = false, features = ["rustls-tls-webpki-roots"] }
+serde = { version = "1.0.197", features = ["derive"] }
+utoipa = { version = "4.0.0", features = ["axum_extras"] }
+utoipa-swagger-ui = { version = "6.0.0", features = ["axum"] }
+sled = { version = "0.34.7", features = ["io_uring"] }
+serde_json = "1.0.115"

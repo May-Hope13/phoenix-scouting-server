@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+
+{% block content %}
+<style>
+table {
+	font-size: 14pt;
+}
+</style>
+
+<h1>Phoenix Scouting Server</h1>
+
+<h3>Robust, collaborative FRC scouting</h3>
+
+<hr />
+<br />
+
+<h3>Build on top of us</h3>
+<p>Our API is <a href="/api">documented</a>, easy to use, and blazingly fast.</p>
+
+<br />
+
+<h3>Easy-to-use, cross-platform scouting app</h3>
+<p>Written in Flutter, we offer web and Android versions of our custom scouting app, perfectly integrated with our server.</p>
+
+<br />
+
+<div class="boxy-box">
+	<h3>Manage your scouting team</h3>
+	<form method="post" action="/auth">
+		<input type="text" name="u" placeholder="Username" />
+		<input type="password" name="p" placeholder="Password" />
+		<input type="submit" value="Log in" />
+	</form>
+	<p>Don't have an account? Please see us at a competition for now :)</p>
+</div>
+
+<br />
+
+<table>
+	<tr>
+		<th>Rank</th>
+		<th>Team</th>
+		<th>CWP</th>
+	</tr>
+	<tr>
+		<td>#1</td>
+		<td>4533</td>
+		<td>69,696,969</td>
+	</tr>
+</table>
+{% endblock content %}
